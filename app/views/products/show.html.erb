@@ -1,1 +1,10 @@
-<h1>You are selecting product: <%= @product.title %></h1>
+<div class="content is-medium">
+  <h1 class="title is-2 is-spaced">Product overview</h1>
+
+  <div>
+    <p><span class="subtitle">Name:</span> <%= @product.title %></p>
+    <p><span class="subtitle">Price:</span> <%= @product.price%></p>
+    <p><span class="subtitle">Stock Quantity:</span> <%= @product.stock_quantity%></p>
+    <p><span class="tag is-warning is-light">Category:</span> <%= @product.category.name%></p>
+  </div>
+</div>

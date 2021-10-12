@@ -1,8 +1,10 @@
-<h1>My Product list</h1>
-<ul>
-  <% @products.each do | product | %>
-    <li>
-      <%= link_to product.title, product %>
-    </li>
-  <% end %>
-</ul>
+  <div class="content is-medium">
+    <h2 class="title is-2">My Products List</h2>
+    <ul>
+      <% @products.each do | product | %>
+        <li>
+          <%= link_to product.title, product %> - <%= product.category.name %>
+        </li>
+      <% end %>
+    </ul>
+  </div>

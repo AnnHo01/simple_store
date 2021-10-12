@@ -4,6 +4,6 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.all()
+    @products = Product.includes(:category).all()
   end
 end
